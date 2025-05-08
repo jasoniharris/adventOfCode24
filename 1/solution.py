@@ -31,5 +31,9 @@ def calculate_total_distance(input_file):
     return total_distance
 
 if __name__ == "__main__":
+    import time
+    start_time = time.time()
     result = calculate_total_distance("input.txt")
+    end_time = time.time()
     print(f"The total distance between the lists is: {result}")
+    print(f"Execution time: {(end_time - start_time) * 1000:.2f} ms")
